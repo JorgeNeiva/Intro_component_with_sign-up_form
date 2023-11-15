@@ -11,6 +11,14 @@
     display: none;
 }
 
+.field-group.error .error-text,
+.field-group.error .error-icon {
+    display: block;
+}
+.field-group.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
 html {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -121,6 +129,7 @@ html {
 }
 
 .right-col button[type = submit] {
+    cursor: pointer;
     border: none;
     background-color: hsl(154, 59%, 51%);
     box-shadow: 0px 4px hsl(154, 56%, 44%);
